@@ -1,0 +1,5 @@
+- name: "install certbot"
+  raw: pkg install {{ item }} -y
+  with_items: 
+      - "certbot"
+

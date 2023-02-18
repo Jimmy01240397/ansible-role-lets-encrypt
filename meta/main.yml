@@ -1,0 +1,40 @@
+galaxy_info:
+  author: Chummy
+  description: Ansible role for let's encrypt
+  role_name: letsencrypt
+
+  license: MIT
+
+  min_ansible_version: 1.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - groovy
+        - hirsute
+        - impish
+        - jammy
+        - kinetic
+        
+    - name: Debian
+      versions:
+        - buster
+        - bullseye
+    - name: Alpine
+      versions:
+        - all
+    - name: Archlinux
+      versions:
+        - all
+    - name: EL
+      versions:
+        - 8
+        - 9
+    - name: Fedora
+      versions:
+        - 36
+        - 37
+
+  galaxy_tags:
+    - let's encrypt
