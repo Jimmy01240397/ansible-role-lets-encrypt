@@ -3,5 +3,5 @@
 
 - name: Generate certs
   command: "certbot certonly -n --agree-tos -d {{ ([item.cn] + item.domains) | join(',') }} -m {{ emails | join(',') }}"
-  with_items: certs
+  with_items: "{{ certs }}"
 
