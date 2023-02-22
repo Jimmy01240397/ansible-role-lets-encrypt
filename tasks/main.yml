@@ -2,6 +2,6 @@
   include_tasks: "{{ ansible_pkg_mgr|lower }}.yml"
 
 - name: Generate certs
-  command: "certbot certonly -n --agree-tos -d {{ ([item.cn] + item.domains) | join(',') }} -m {{ emails | join(',') }}"
+  command: "certbot certonly -n --agree-tos --standalone -d {{ ([item.cn] + item.domains) | join(',') }} -m {{ emails | join(',') }}"
   with_items: "{{ certs }}"
 
